@@ -1,0 +1,31 @@
+<div class="bgcontainer">
+    <img class="bg" src="Skikaart.jpg" />
+</div>
+
+
+<div class="content">
+
+    <img class="logo" src="logo.png"/>
+    <img class="sidebar" src="Sidebar.png"/>
+
+
+    <div class="menu">
+        <a class='menulink'  href="home_content.html">Home</a>
+        <a class='menulink'  href="info_content.html">Info</a>
+        <a class='menulink'  href="organisatie_content.html">Organisatie</a>
+        <a class='menulink'  href="inschrijven_content.html">Inschrijven</a>
+    </div>
+    <script type='text/javascript'>
+        $(function(){
+            var target = $('.pagecontent')
+            $('.menu').on('click', 'a', function(e){
+                e.preventDefault()
+                target.load($(this).prop('href'));
+            });
+        });
+
+    </script>
+    <div class="pagecontent">
+
+    </div>
+</div>
