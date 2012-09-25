@@ -14,12 +14,17 @@ h2{
 }
 
 a{
-    color: #888;
+    color: #666;
     text-decoration: none;
 }
 
 a:hover{
     color:#000;
+}
+
+a:before{
+    margin-right: 3px;
+    content: '»';
 }
 
 .menu{
@@ -71,7 +76,7 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.7);
     
     width: 900px;
-    min-height: 450px;
+    min-height: 550px;
 
     position: absolute;
     top: 130px;
@@ -116,5 +121,10 @@ a:hover{
 }
 
 .maps{
-    height:900px;
+    float: right;
+    padding-left: 10px;
+}
+
+li{
+    list-style-type: none;
 }

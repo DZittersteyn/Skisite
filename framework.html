@@ -10,15 +10,16 @@
 
 
     <div class="menu">
-        <a class='menulink'  href="home_content.html">Home</a>
-        <a class='menulink'  href="info_content.html">Info</a>
-        <a class='menulink'  href="organisatie_content.html">Organisatie</a>
-        <a class='menulink'  href="inschrijven_content.html">Inschrijven</a>
+        <a class='nav'  href="home_content.html">Home</a>
+        <a class='nav'  href="info_content.html">Info</a>
+        <a class='nav'  href="organisatie_content.html">Organisatie</a>
+        <a class='nav'  href="inschrijven_content.html">Inschrijven</a>
+        <a class='nav'  href="PARTY_CONTENT.HTML">Sfeer</a>
     </div>
     <script type='text/javascript'>
         $(function(){
             var target = $('.pagecontent')
-            $('.menu').on('click', 'a', function(e){
+            $('a.nav').live('click', function(e){
                 e.preventDefault()
                 target.load($(this).prop('href'));
             });
