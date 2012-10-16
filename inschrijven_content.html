@@ -47,7 +47,9 @@
 
             $('#akkoord').change(function(){
                 $('#gotoHusk').prop('disabled', !$(this).is(':checked'));
-                $('#login').dialog();
+                $('#login').dialog({
+                    width: 500
+                });
             });
             $('#gotoHusk').click(function(e){
                 e.preventDefault();
