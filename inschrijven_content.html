@@ -30,7 +30,9 @@
         <!-- value='Naar de Husk-site' /> -->
     </form>
 
-
+    <div class="hidden" id="login">
+        Voor het inschrijven gebruik je de HUSK-site. Maak daar via de link "Indien u nog geen account heeft, kunt u zich hier aanmelden" een nieuw account aan en meld je aan!
+    </div>
 
 
     <script type='text/javascript'>
@@ -45,6 +47,7 @@
 
             $('#akkoord').change(function(){
                 $('#gotoHusk').prop('disabled', !$(this).is(':checked'));
+                $('#login').dialog();
             });
             $('#gotoHusk').click(function(){
 
