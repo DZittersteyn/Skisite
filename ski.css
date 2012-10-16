@@ -22,7 +22,7 @@ a:hover{
     color:#000;
 }
 
-a:before{
+.nav:before{
     margin-right: 3px;
     content: '»';
 }
