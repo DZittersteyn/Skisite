@@ -21,7 +21,7 @@
     </div>
     <hr/>
 
-    <form action="http://www.husk.nl/">
+    <form action="#">
         <input id='akkoord' name='akkoord' type='checkbox'/>
         <label for='akkoord'> Ik ga akkoord met de <a class="toggleav" href="#">algemene voorwaarden</a> en heb de algemene voorwaarden van HUSK gelezen.</label>
         <br/>
@@ -49,8 +49,9 @@
                 $('#gotoHusk').prop('disabled', !$(this).is(':checked'));
                 $('#login').dialog();
             });
-            $('#gotoHusk').click(function(){
-
+            $('#gotoHusk').click(function(e){
+                e.preventDefault();
+                window.open('foo');
             });
         });
     </script>
